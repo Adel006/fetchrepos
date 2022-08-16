@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.repos-interface {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.repos-interface .repos-input {
+    display: flex;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.repos-interface .repos-input input:first-child {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.repos-interface .repos-input input:first-child:focus {
+    border-color: #2196f3;
+    outline: none;
+}
+
+.repos-interface .repos-input input:last-child {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+}
+
+.repos-interface .repos-data {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.repos-data .error-message {
+    display: block;
+    color: #ff0000;
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.repos-data .repo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.repos-data .repo:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.repo .repo-details {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .repo .repo-details {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.repo .repo-details span, .repo .repo-details a {
+    width: 100px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.repo .repo-details span {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.repo .repo-details a {
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #fff;
+    margin-left: 5px;
+}
